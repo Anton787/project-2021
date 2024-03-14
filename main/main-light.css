@@ -1,0 +1,396 @@
+html body {
+    background-color: #f7f7f8;
+}
+
+button:hover {
+    background-color: #e9e9e9;
+    border-radius: 20px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0px;
+    line-height: 1.2!important;
+}
+
+
+/* Анимация */
+
+@keyframes texttransform {
+    0% {
+        color: #0e0e1000;
+    }
+    29% {
+        color: #0e0e102c;
+    }
+    30% {}
+    40% {
+        color: #0e0e105e;
+    }
+    59% {
+        color: #0e0e108e;
+    }
+    60% {
+        color: #0e0e10bb;
+    }
+    100% {
+        color: #0e0e10;
+    }
+}
+
+/* Блок с регистрацией */
+
+.registration {
+    height: 370px;
+    width: 451px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    top: 50%;
+    margin-top: -210px;
+    left: 50%;
+    margin-left: -190px;
+    transition: all 0.2s ease;
+    display: none;
+    z-index: 990;
+    transition: all 0.1s ease;
+}
+
+.vhod-word{
+    color: #0e0e10;
+    margin-bottom: 0px;
+}
+
+.registr-word{
+    color: #0e0e10;
+}
+
+.navigation{
+    width: 380px;
+    height: 29px;
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid hsla(0,0%,100%,.1)!important;
+}
+
+
+.text-registration{
+    color: #0e0e10;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.text-login{
+    color: #0e0e10;
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    justify-content: left;
+}
+
+.email-password{
+    height: 38px;
+    margin-bottom: 15px;
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    color:#bebebe;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.email-password:focus{
+    border: 2px solid #5c16c5;
+    background-color: #f9f9f9;
+    height: 38px;
+}
+
+.login{
+    width: 100%;
+    height: 38px;
+    margin-top: 15px;
+    background-color: #9147ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover{
+    background-color: #772ce8;
+    border-radius: 5px;
+}
+
+.vhojy-word{
+    color: #0e0e10;
+    margin-bottom: 0px;
+}
+
+.dark-background{
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 100%;
+    width: 100%;
+    z-index: 990;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+/* Регистрация */
+
+.day{
+    height: 38px;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    background-color: #bdbdbd;
+    border-radius: 5px;
+    color:#efeff1;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.day:focus{
+    border: 2px solid #5c16c5;
+    background-color: #f9f9f9;
+    height: 38px;
+}
+
+.registr-purple{
+    border-bottom: 2px solid #a970ff;
+}
+
+.registr-word-purple{
+    color: #a970ff;
+}
+
+/* Выбор настройки или аналитика */
+
+.setting-analytic {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    z-index: 999;
+    top: 63px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.setting-link {
+    border-bottom: 1px solid #696969;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.text-change {
+    color: #0e0e10;
+    margin-left: 10px;
+}
+
+/* Шапка */
+
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #272728;
+    z-index: 980;
+    position: fixed;
+    top: 0px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark_white:hover {
+    background-color: #e9e9e9;
+    border-radius: 20px;
+}
+
+.text_cybersport {
+    margin: 10px;
+    width: 120px;
+    height: 20px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 19px;
+    color: #0e0e10;
+}
+
+.text_cybersport:hover {
+    color: #772ce8;
+    font-weight: 600;
+}
+
+.exit {
+    float: right;
+    width: 70px;
+    height: 40px;
+    background-color: #bbbbbb;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.Vhod {
+    color: #0e0e10;
+    font-weight: 500;
+    font-size: 18px;
+    height: 20px;
+}
+
+/* Подписки*/
+
+.subscribe {
+    width: 60px;
+    height: 93vh;
+    position: fixed;
+    background-color: #f9f9f9;
+    transition: all 0.5s ease;
+    z-index: 970;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sub {
+    color: #0e0e10;
+    font-size: 19px;
+    font-weight: 500;
+    display: none;
+}
+
+.subscribe:hover .sub {
+    animation: texttransform 0.5s 0.25s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    display: block;
+}
+
+.avatar1:hover {
+    background-color: #dddddd;
+}
+
+.avatar:hover {
+    background-color: #dddddd;
+}
+
+.avatar_last:hover {
+    background-color: #dddddd;
+}
+
+.name_stream {
+    color: #0e0e10;
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+    vertical-align: top;
+}
+
+.what_play {
+    color: #313131;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 55px;
+    bottom: 23px;
+    display: none;
+}
+
+.subscribe:hover .what_play {
+    animation: texttransform 0.6s 0.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    display: inline;
+}
+
+.subscribe:hover .name_stream {
+    animation: texttransform 0.6s 0.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    display: inline;
+}
+/* Главная */
+
+/* Карусель */
+
+.background{
+    width: 100%;
+    height: 472px;
+    z-index: 99;
+    background-color: rgba(207, 207, 207, 0.281);
+    position: absolute;
+}
+
+.fullscrean{
+    width: 350px;
+    height: 30px;
+    background-color: #7d26ff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 7vh;
+    right: 61vh;
+    z-index: 300;
+}
+
+.carousel {
+    height: 472px;
+    margin-left: 60px;
+    text-align: center;
+    padding-top: 37px;
+    margin-top: 65px;
+    border-bottom: 1px solid #272728;
+    display: flex;
+    justify-content: center;
+}
+
+/* Популярные игры */
+
+.info {
+    height: 50px;
+    background-color: #d8d8d8;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.popular-game{
+    color: #0e0e10;
+}
+
+.info_game {
+    font-size: 13px;
+    color: #0e0e10;
+    float: left;
+    margin-right: 300px;
+}
+
+.game-online {
+    font-size: 13px;
+    color: #0e0e10;
+    float: left;
+}

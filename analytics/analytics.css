@@ -1,0 +1,613 @@
+html body {
+    background-color: #0e0e10;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+h3 {
+    color: #efeff1;
+}
+
+b {
+    color: #efeff1;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0px;
+    line-height: 1.2!important;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+input:active, textarea:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+/* Анимация */
+
+@keyframes texttransform {
+    0% {
+        color: #efeff100;
+    }
+    29% {
+        color: #efeff11e;
+    }
+    30% {}
+    40% {
+        color: #efeff14b;
+    }
+    59% {
+        color: #efeff167;
+    }
+    60% {
+        color: #efeff185;
+    }
+    100% {
+        color: #efeff1;
+    }
+}
+
+/* Блок с регистрацией */
+
+.registration {
+    height: 370px;
+    width: 451px;
+    text-align: center;
+    background-color: #18181b;
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    top: 50%;
+    margin-top: -210px;
+    left: 50%;
+    margin-left: -190px;
+    transition: all 0.2s ease;
+    display: none;
+    z-index: 990;
+    transition: all 0.1s ease;
+}
+
+.close {
+    height: 37px;
+    position: fixed;
+    z-index: 991;
+    top: 28vh;
+    right: 72vh;
+    padding-bottom: 2px;
+    display: none;
+}
+
+.close:hover {
+    border-radius: 6px;
+}
+
+/* .email-password {
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+} */
+
+.vhodi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.text-reg {
+    width: 380px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.white {
+    width: 35px;
+    height: 35px;
+    display: block;
+    float: left;
+    position: relative;
+    left: 60px;
+}
+
+.vhod-word {
+    color: #efeff1;
+    margin-bottom: 0px;
+}
+
+.registr-word {
+    color: #efeff1;
+}
+
+.navigation {
+    width: 380px;
+    height: 29px;
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1)!important;
+}
+
+.place-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.text-registration {
+    color: #efeff1;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.text-login {
+    color: #efeff1;
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    justify-content: left;
+}
+
+.email-password {
+    height: 38px;
+    margin-bottom: 15px;
+    background-color: #464648;
+    border-radius: 5px;
+    color: #efeff1;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.email-password:focus {
+    border: 2px solid #5c16c5;
+    height: 38px;
+}
+
+.login {
+    width: 100%;
+    height: 38px;
+    margin-top: 15px;
+    background-color: #9147ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover {
+    background-color: #772ce8;
+    border-radius: 5px;
+}
+
+.vhojy {
+    border-radius: 0px;
+    margin-right: 20px;
+}
+
+.vhojy-word {
+    color: #efeff1;
+    margin-bottom: 0px;
+}
+
+.vhojy:hover {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.vhojy-purple {
+    border-bottom: 2px solid #a970ff;
+}
+
+.vhod-word-purple {
+    color: #a970ff;
+}
+
+.registr {
+    border-radius: 0px;
+}
+
+.registr:hover {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.dark-background {
+    background-color: rgba(0, 0, 0, 0.829);
+    height: 100%;
+    width: 100%;
+    z-index: 990;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* Регистрация */
+
+.place-registration {
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.day {
+    height: 38px;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    background-color: #464648;
+    border-radius: 5px;
+    color: #efeff1;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.day:focus {
+    border: 2px solid #5c16c5;
+    height: 38px;
+}
+
+.registr-purple {
+    border-bottom: 2px solid #a970ff;
+}
+
+.registr-word-purple {
+    color: #a970ff;
+}
+
+/* Выбор настройки или аналитика */
+
+.setting-analytic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: absolute;
+    z-index: 999;
+    top: 63px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: #1d1d20;
+    -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.none-setting-analytic{
+    display: none;
+}
+
+.setting-link {
+    border-bottom: 1px solid #696969;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.text-change {
+    color: #efeff1;
+    margin-left: 10px;
+}
+
+.www{
+    display: flex;
+    flex-flow: row;
+    width: 141px;
+}
+
+.www:hover{
+ text-decoration: none;
+}
+
+/* Шапка */
+
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: #18181b;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #272728;
+    z-index: 980;
+    position: fixed;
+    top: 0px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-top: 3px;
+    float: left;
+}
+
+.dark_white {
+    width: 41px;
+    height: 41px;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.dark_white:hover {
+    background-color: #3e3e40;
+    border-radius: 20px;
+}
+
+.darkicon {
+    width: 40px;
+    height: 40px;
+}
+
+.cybersport {
+    height: 45px;
+    width: 200px;
+    position: relative;
+    right: -80px;
+    text-align: center;
+}
+
+.text_cybersport {
+    margin: 10px;
+    width: 120px;
+    height: 20px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 19px;
+    color: #efeff1;
+}
+
+.text_cybersport:hover {
+    color: #772ce8;
+    font-weight: 600;
+}
+
+.exit {
+    float: right;
+    width: 70px;
+    height: 40px;
+    background-color: #3a3a3d;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.exit:hover {
+    border-radius: 20px;
+}
+
+.Vhod {
+    color: #efeff1;
+    font-weight: 500;
+    font-size: 18px;
+    height: 20px;
+}
+
+.profile {
+    float: right;
+    width: 45px;
+    height: 45px;
+    border-radius: 88px;
+    display: block;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.norm-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    display: none;
+}
+
+/* Логотип */
+
+.logoBlue {
+    width: 35px;
+}
+
+.logoWhite {
+    width: 35px;
+    position: relative;
+    bottom: 35px;
+    transition: all 0.2s linear 0s;
+    float: left;
+}
+
+.logoWhite:hover {
+    position: relative;
+    left: 1px;
+    bottom: 38px;
+}
+
+/* Главная */
+
+.main{
+    margin-top: 70px;
+    height: 92vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.analytic{
+    width: 80%;
+}
+
+.choice-mounth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1c;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.mounth{
+    color: #a970ff;
+    font-size: 18px;
+}
+
+.right, .left{
+    width: 70px;
+    height: 50px;
+}
+
+.left{
+    border-right: 1px solid #696969;
+}
+
+.right{
+    border-left: 1px solid #696969;
+}
+
+.left:hover, .right:hover{
+    background-color: #696969;
+}
+
+.all-analytic{
+    display: flex;
+    flex-flow: column;
+}
+
+.pick-analytic{
+    display: flex;
+    flex-flow: row;
+}
+
+.style-analytic{
+    width: 100%;
+    background-color: #1a1a1c;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px rgba(105, 105, 105, 1);
+}
+
+.style-analytic:hover{
+    background-color: #242427;
+}
+
+.number{
+    color: #6a22db;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.info-analytic{
+    color: #d6d6d6;
+    font-size: 15px;
+}
+
+.statistics{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.week{
+    /* display: flex;
+    flex-flow: column; */
+    width: 15%;
+}
+
+.date{
+    color: #efeff1;
+
+}
+
+.day-week{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1c;
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px rgba(105, 105, 105, 1);
+}
+
+.stat{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.stat-viewers{
+    display: none;
+}
+
+.stat-visiting{
+    display: none;
+}
+
+.stat-new-sub{
+    display: none;
+}
+
+.stat-message{
+    display: none;
+}
+
+.stat-watched{
+    display: none;
+}
+
+.by-dates{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1c;
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px rgba(105, 105, 105, 1);
+}
+
+.result{
+    color: #efeff1;
+}

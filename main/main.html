@@ -1,0 +1,290 @@
+<!-- 
+    1)Определение проблемы 
+    О чём сайт? 
+    Какого вида сайт (магазин, форум, в инете о видах сайта)
+    Для кого сайт?
+    2)Составление плана сайта и нахождение дизайна(Figma+behance.net+dribbble.com)
+    Определить кол-во стр (Минимум 5 стр)
+    3)Выроботка требований 
+    Подробное описание функционала, определить краткую спецификацию сайта
+    4)Создание плана разработки
+    В формальном виде составить план разработки(учёт проблем и требований)
+    С ДАТАМИ(Финал 30 мая)
+    5)Вёрстка сайта
+    6)Написание кода, скриптов и т.п
+    7)Тестирование
+    8)Создание презинтации
+-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sw1tсh</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" id="theme-link">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="dark-background"></div>
+    <button class="close"><img src="/only_main_img/X_white.png" class="X" alt="close"></button>
+    <div class="registration">
+        <div class="vhodi">
+            <div class="text">
+                <img src="/all_use_img/twitch_blue_white.png" class="white" alt="">
+                <h4 class="vhod-word">
+                    Войти в Sw1tch
+                </h4>
+            </div>
+            <div class="navigation">
+                <button class="vhojy">
+                    <p class="vhojy-word">Войти</p>
+                </button>
+                <button class="registr">
+                    <p class="registr-word">Регистрация</p>
+                </button>
+            </div>
+            <div class="place-login">
+                <p class="text-registration">Имя пользователя</p>
+                <input type="text" class="email-password" id="email" value="">
+                <p class="text-registration">Пароль</p>
+                <input type="password" class="email-password" value="">
+            </div>
+
+            <div class="place-registration">
+                <p class="text-registration">Имя пользователя</p>
+                <input type="" class="email-password" id="email" value="">
+                <p class="text-registration">Пароль</p>
+                <input type="password" class="email-password" value="" id="password1">
+                <p class="text-registration">Повторите пароль</p>
+                <input type="password" class="email-password" value="" id="password2">
+                <p class="text-registration">Дата рождения</p>
+                <div class="date-birth">
+                    <input type="text" placeholder="День" class="day">
+                    <select class="day" aria-label="Укажите месяц своего рождения"
+                        data-a-target="birthday-month-select">
+                        <option value="" disabled="">Месяц</option>
+                        <option value="1">Январь</option>
+                        <option value="2">Февраль</option>
+                        <option value="3">Март</option>
+                        <option value="4">Апрель</option>
+                        <option value="5">Май</option>
+                        <option value="6">Июнь</option>
+                        <option value="7">Июль</option>
+                        <option value="8">Август</option>
+                        <option value="9">Сентябрь</option>
+                        <option value="10">Октябрь</option>
+                        <option value="11">Ноябрь</option>
+                        <option value="12">Декабрь</option>
+                    </select>
+                    <input type="text" placeholder="Год" class="day">
+                </div>
+                <p class="text-registration">Эл.почта</p>
+                <input type="email" class="email-password">
+            </div>
+
+            <button class="login">
+                <p class="text-login">Войти</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="setting-analytic">
+        <div class="setting-link">
+            <a href="/setting/setting.html" class="www">
+                <img src="/all_use_img/cogwheel_icon_129459.png" class="gear" alt="">
+                <p class="text-change">
+                    Настройки
+                </p>
+            </a>
+        </div>
+        <div class="setting-link">
+            <a href="/analytics/analytics.html" class="www">
+                <img src="/all_use_img/graph-5_icon-icons.com_58023.png" class="gear" alt="">
+                <p class="text-change">
+                    Аналитика
+                </p>
+            </a>
+        </div>
+    </div>
+
+    <div class="header" id="header">
+        <div class="leftside">
+            <div class="logo">
+                <a href="/main/main.html"><img src="/all_use_img/twitch_blue(1).png" alt="Ups" class="logoBlue">
+                    <img src="/all_use_img/twitch_blue_white.png" alt="Ups :D" class="logoWhite"></a>
+            </div>
+            <button class="dark_white" id="dark_white"><img src="/all_use_img/sun_moon_white.png" alt="Кнопка «input»"
+                    class="darkicon"></button>
+        </div>
+
+        <div class="login-place">
+            <button class="profile">
+                <img src="/all_use_img/profile-anonymous2.png" class="profile-img" alt="Профиль">
+            </button>
+            <button class="exit">
+                <p class="Vhod">Вход</p>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <img src="/all_use_img/heart-shape-outline_icon-icons.com_73534.png" class="sub-img" alt="">
+        <p class="sub">ОТСЛЕЖИВАЕМЫЕ КАНАЛЫ</p>
+        <div class="avatar1">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/b809a599-c714-4375-922a-0d9b069a5b7f-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">pokanoname</p> <br>
+            <p class="what_play">Counter-Strike: Global Offensive</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4bf37688-7b19-4d3f-9d56-11740ad38c4d-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">csgomc_ru</p> <br>
+            <p class="what_play">Counter-Strike: Global Offensive</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/0d863a34-3f15-4d8e-b686-04083220754f-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">Spt083</p> <br>
+            <p class="what_play">Fortnite</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/371a4ddd-c4ef-418c-9f42-cfecda78187d-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">loud_coringa</p> <br>
+            <p class="what_play">Grand Theft Auto V</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/7ed5e0c6-0191-4eef-8328-4af6e4ea5318-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">shroud</p> <br>
+            <p class="what_play">VALORANT</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/2a5176cc-f522-487c-a6b8-636ff9f57a54-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">bratishkinOFF</p> <br>
+            <p class="what_play">Общение</p>
+        </div>
+        <div class="avatar_last">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/aee05b3b-77a8-4ed5-95a3-0c5f29c42901-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">nafany_</p> <br>
+            <p class="what_play">Counter-Strike: Global Offensive</p>
+        </div>
+        <img src="/all_use_img/videocamerasideviewoutlinedtoolsymbol_79940.png" class="sub-img" alt="">
+        <p class="sub">РЕКОМЕНДУЕМЫЕ КАНАЛЫ</p>
+        <div class="avatar1">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/1975b18f-fa7d-443f-b191-fba08f92f3a2-profile_image-70x70.jpeg"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">nafany_</p> <br>
+            <p class="what_play">Counter-Strike: Global Offensive</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a5fd93a4-ecd3-43a9-9613-161ea9892243-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">23x59</p> <br>
+            <p class="what_play">Hearthstone</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/dc92137a-67bb-42f8-943c-fa9ec46b1933-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">Zark</p> <br>
+            <p class="what_play">Общение</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/2b825f3d-6034-4d37-9e88-29aed1b0f565-profile_image-70x70.png"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">archangel_hs</p> <br>
+            <p class="what_play">Fortnite</p>
+        </div>
+        <div class="avatar">
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f59f8a13-6612-47da-bfdb-14831782ec3e-profile_image-70x70.jpg"
+                class="img_avatar" alt="Poka">
+            <p class="name_stream">Tixerok</p> <br>
+            <p class="what_play">Call of Duty: Warzone</p>
+        </div>
+    </div>
+
+    <div class="background"> </div>
+
+    <div class="main">
+        <div class="carousel">
+            <div class="stream">
+                <div class="fullscrean">
+                    <a href="/Fullscreen-stream/Stream.html">
+                        <p class="full">Открыть в полноэкраном режиме</p>
+                    </a>
+                </div>
+                <iframe width="797" height="319" id="stream2" class="stream-left"
+                    src="https://www.youtube.com/embed/NVIRFJ_gKM4" title="YouTube video player"
+                    frameborder="0"></iframe>
+                <iframe width="797" height="319" id="stream2" class="stream-left2"
+                    src="https://www.youtube.com/embed/9HmOGRqId2Q" title="YouTube video player"
+                    frameborder="0"></iframe>
+                <iframe width="663" height="375" id="stream1" class="stream-center"
+                    src="https://www.youtube.com/embed/XxMFrb6Rqso" title="YouTube video player"
+                    frameborder="0"></iframe>
+                <iframe width="797" height="319" id="stream3" class="stream-right"
+                    src="https://www.youtube.com/embed/ob2Dd3zo0jg" title="YouTube video player"
+                    frameborder="0"></iframe>
+                <iframe width="797" height="319" id="stream3" class="stream-right2"
+                    src="https://www.youtube.com/embed/VprrV0Pqk-Q" title="YouTube video player"
+                    frameborder="0"></iframe>
+                <iframe width="797" height="319" id="stream2" class="stream-none"
+                    src="https://www.youtube.com/embed/wRsxlN-fQM4" title="YouTube video player"
+                    frameborder="0"></iframe>
+            </div>
+            <button class="right" id="right"><img src="/only_main_img/right_white.png" alt="Кнопка «input»"
+                    class="right_img"></button>
+            <button class="left" id="left"><img src="/only_main_img/left_white.png" alt="Кнопка «input»"
+                    class="left_img"></button>
+        </div>
+
+        <div class="game">
+            <p class="popular-game">Популярные игры</p>
+            <div class="games">
+                <div class="popular">
+                    <a href="/game-profile/valorant.html">
+                        <img src="/only_main_img/VALORANT_dark.jpg" alt="valorant" class="img-game">
+                        <div class="info">
+                            <p class="info_game">Valorant</p>
+                            <p class="game-online"> Средний онлайн в прошлом месяце: 77,4 тыс</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="popular">
+                    <a href="/game-profile/CsGo.html">
+                        <img src="/only_main_img/wallpaperflare.com_wallpaper.jpg" alt="Cs:Go" class="img-game">
+                        <div class="info">
+                            <p class="info_game">Cs:Go</p>
+                            <p class="game-online"> Средний онлайн в прошлом месяце: 100,4 тыс</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="popular">
+                    <a href="/game-profile/Minecraft.html">
+                        <img src="/only_main_img/Minecraft.jpg" alt="Minecraft" class="img-game">
+                        <div class="info">
+                            <p class="info_game">Minecraft</p>
+                            <p class="game-online"> Средний онлайн в прошлом месяце: 3,5 млрд</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
